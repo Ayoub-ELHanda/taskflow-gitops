@@ -1,0 +1,19 @@
+# Exceptions PSSI-R5 — image ghcr.io/9m7fjfpv9k-cyber/taskflow:2.2.0
+# Ajoutées le 2026-10-15. Correctif disponible, mais il exige de reconstruire
+# l'image (hors du périmètre de ce dépôt GitOps). Exploitabilité dans TaskFlow
+# non vérifiée : le code applicatif n'est pas dans ce dépôt.
+# Exception temporaire : à lever avant l'échéance, en demandant une image
+# reconstruite avec starlette >= 1.3.1 et urllib3 >= 2.8.0.
+
+# starlette 0.41.3
+CVE-2025-62727 exp:2026-10-30
+CVE-2026-48818 exp:2026-10-30
+CVE-2026-54283 exp:2026-10-30
+
+# urllib3 1.26.20
+CVE-2025-66418 exp:2026-10-30
+CVE-2025-66471 exp:2026-10-30
+CVE-2026-21441 exp:2026-10-30
+CVE-2026-44431 exp:2026-10-30
+CVE-2026-97687 exp:2026-10-30
+CVE-2026-97689 exp:2026-10-30
